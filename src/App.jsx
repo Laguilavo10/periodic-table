@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { TablaPeriodica } from "./components/TablaPeriodica";
 import { ElementoTabla } from "./components/ElementoTabla";
 import { ElementoDetalle } from "./components/ElementoDetalle";
+import { API, options } from "./API";
 import "./styles/elementos.css";
 
 function App() {
@@ -10,20 +11,13 @@ function App() {
   const [element, setElement] = useState("");
 
   useEffect(() => {
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "dc06300e98msh901821df3b6f5e9p169d2bjsn4f2da76977b3",
-        "X-RapidAPI-Host": "periodictable.p.rapidapi.com",
-      },
-    };
-    fetch("https://periodictable.p.rapidapi.com/", options)
+    fetch(API, options)
       .then((response) => response.json())
       .then((response) => {
         setElement(response);
         setLoading(false);
       })
-      .catch((err) => console.error(err));
+      .catch((err)=>(alert('Error')))
   }, []);
 
   let tabla = loading ? (
@@ -31,14 +25,15 @@ function App() {
   ) : (
     <div className="tabla-periodica">
       <ElementoDetalle
-        elementoDetalle={elementoDetalle || element[0]}
-      ></ElementoDetalle>
+        elementoDetalle={elementoDetalle || element[0]}>
+      </ElementoDetalle>
       <TablaPeriodica>
         {element.map((e, index) => (
           <ElementoTabla
             info={e}
             key={index}
             index={index + 1}
+            elementoDetalle ={elementoDetalle || element[0]}
             setElementoDetalle={setElementoDetalle}
           />
         ))}
