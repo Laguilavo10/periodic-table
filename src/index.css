@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid tomato;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-color: #1C1D21;
+}
+
+li{
+  list-style: none;
+}
+
+.elemento{
+  display: flex;
+  list-style: none;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.elemento > span:first-child{
+  font-size: .7rem;
+  position: absolute;
+  bottom: 4px;
+}
+
+.tabla-periodica{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tabla{
+  display: grid;
+  grid-template-columns: repeat(18, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 4px;
+  margin: 20px;
+
+}
+
