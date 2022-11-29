@@ -3,10 +3,10 @@ import '../../styles/elementoDetalle.css'
 
 
 export function ElementoDetalle({elementoDetalle}) {
-  console.log(elementoDetalle)
+  let grupo = elementoDetalle.groupBlock.split(" ").join("-");
   return (
     <div className='detalle-container'>
-      <div className={`card ${elementoDetalle.groupBlock}`}>  
+      <div className={`card ${grupo}`}>  
           <p id='numero'>{elementoDetalle.atomicNumber}</p>
           <p id='masa'>{elementoDetalle.atomicMass}</p>
           <p id='simbolo'>{elementoDetalle.symbol}</p>
