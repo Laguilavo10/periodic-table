@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [elementoDetalle, setElementoDetalle] = useState("");
   const [element, setElement] = useState("");
-
+ console.log(options)
   useEffect(() => {
     fetch(API, options)
       .then((response) => response.json())
