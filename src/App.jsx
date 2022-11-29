@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TablaPeriodica } from "./components/TablaPeriodica";
 import { ElementoTabla } from "./components/ElementoTabla";
 import { ElementoDetalle } from "./components/ElementoDetalle";
-
+import './styles/elementos.css'
 let elementos = [
   {
     alloys: "",

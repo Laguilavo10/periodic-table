@@ -1,27 +1,26 @@
 .detalle-container{
-  margin: auto 12px;
+  margin: 20px auto;
   display: flex;
   gap: 12px;
-  min-width: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card{
-  width: 200px;
-  background-color: aqua;
+  width: 170px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: end;
   padding: 12px;
-  gap: 8px;
+
 }
 
 #numero{
   position: absolute;
   top: 12px;
-
 }
-
 
 #masa{
   position: absolute;
@@ -35,6 +34,27 @@
 }
 
 #nombre{
-  
   text-align: center;
+}
+
+.info-elemento{
+  min-width: 300px;
+  margin: auto;
+}
+
+.info-elemento > ul{
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.info-elemento > ul > li{
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.info-elemento > ul > li >span {
+  color: white;
 }
