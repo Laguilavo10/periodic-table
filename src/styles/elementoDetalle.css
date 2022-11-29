@@ -14,7 +14,7 @@
   position: relative;
   justify-content: end;
   padding: 12px;
-
+  border-radius: 7px;
 }
 
 #numero{
