@@ -15,13 +15,13 @@ export function ElementoDetalle({elementoDetalle}) {
       <div className="info-elemento">
         <ul>
           {/* <li>History: <span>{elementoDetalle.facts}</span></li> */}
-          <li>Atomic Mass: <span>{elementoDetalle.atomicMass}</span></li>
-          <li>Atomic Number: <span>{elementoDetalle.atomicNumber}</span></li>
-          <li>density: <span>{elementoDetalle.density}</span></li>
-          <li>Electron Affinity: <span>{elementoDetalle.electronAffinity}</span></li>
-          <li>Electro Negativity: <span>{elementoDetalle.electronegativity}</span></li>
-          <li>Electronic Configuration: <span>{elementoDetalle.electronicConfiguration}</span></li>
-          <li>Molar Heat Capacity: <span>{elementoDetalle.molarHeatCapacity}</span></li>
+          <li> Group: <span>{elementoDetalle.groupBlock}</span></li>
+          <li> Atomic Mass: <span>{elementoDetalle.atomicMass}</span></li>
+          <li> Density: <span>{elementoDetalle.density}</span></li>
+          <li> Electron Affinity: <span>{elementoDetalle.electronAffinity}</span></li>
+          <li> Electro Negativity: <span>{elementoDetalle.electronegativity}</span></li>
+          <li> Electronic Configuration: <span>{elementoDetalle.electronicConfiguration}</span></li>
+          <li> Molar Heat Capacity: <span>{elementoDetalle.molarHeatCapacity}</span></li>
         </ul>
       </div>
 

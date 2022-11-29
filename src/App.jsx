@@ -4282,7 +4282,7 @@ function App() {
   const [elementoDetalle, setElementoDetalle] = useState('')
   return (
     <>
-      <h1>Tabla Periodica</h1>
+      <h1>Periodic Table</h1>
       <div className='tabla-periodica'>
         <ElementoDetalle elementoDetalle={elementoDetalle || elementos[0]}></ElementoDetalle>
         <TablaPeriodica>
